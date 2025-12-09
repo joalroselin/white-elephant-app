@@ -24,7 +24,7 @@ const firebaseConfig = {
 
 console.log("API Key Check:", firebaseConfig.apiKey);
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 
 const googleProvider = new GoogleAuthProvider();
